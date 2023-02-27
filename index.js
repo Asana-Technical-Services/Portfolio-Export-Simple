@@ -5,7 +5,7 @@ const runExport = async () => {
   // reset any
   // add a spinner so the user knows something's going on
   document.getElementById("submit").disabled = true;
-  document.getElementById("lds-spinner").style.display = block;
+  document.getElementById("lds-spinner").style.display = "block";
   document.getElementById("errorbox").innerText = "";
 
   // parse inputs from document
@@ -300,7 +300,7 @@ function exportToCsv(headers, projects, fileName) {
       return rowString;
     })
     .join("\n");
-  
+
   // join the content to the headers
   csvContent += projectsCsvData;
 
